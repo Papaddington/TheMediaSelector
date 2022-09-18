@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.paddington.dev.widget.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivCover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+
+    <com.paddington.dev.widget.AmountCheckView
+        android:id="@+id/viewAmountCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|top"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/tvDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/base_ms_shape_duration"
+        android:paddingStart="4dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="2dp"
+        tools:text="11:23"
+        android:textColor="#ffffffff"
+        android:textSize="10sp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/viewMask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#a60f0f0f"
+        android:visibility="gone" />
+</com.paddington.dev.widget.SquareFrameLayout>
